@@ -1,0 +1,214 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.defaulttext {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#darker {
+    background-color: #00000010;
+}
+
+#selected {
+    background-color: #11111110;
+}
+
+@keyframes bpanimation {
+  0%   {background-color: #f0ff83;}
+  50% {background-color: #e9fd51;}
+  100%   {background-color: #f0ff83;}
+}
+
+@keyframes bfaqanimation {
+  0%   {background-color: #ffeaff;}
+  50% {background-color: #ffcaff;}
+  100%   {background-color: #ffeaff;}
+}
+
+@keyframes bdanimation {
+  0%   {background-color: #ffeadf;}
+  50% {background-color: #ffd0b7;}
+  100%   {background-color: #ffeadf;}
+}
+
+@keyframes bhanimation {
+  0%   {background-color: #c2ffd4;}
+  50% {background-color: #9fffbc;}
+  100%   {background-color: #c2ffd4;}
+}
+
+@keyframes bbloganimation {
+  0%   {background-color: #cec2ff;}
+  50% {background-color: #ea9fff;}
+  100%   {background-color: #cec2ff;}
+}
+
+.bp {
+    animation: bpanimation 100s infinite;
+}
+
+.bfaq {
+    animation: bfaqanimation 100s infinite;
+}
+
+.bd {
+    animation: bdanimation 100s infinite;
+}
+
+.bh {
+    animation: bhanimation 100s infinite;
+}
+
+.bblog {
+    animation: bbloganimation 100s infinite;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #11111150;
+    margin-top: auto; 
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.menu ul li {
+    flex: 1;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: #00000010;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #11111150;
+    margin-top: auto; 
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.aside ul li {
+    flex: 1;
+}
+
+.aside ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.aside ul li a:hover {
+    background-color: #00000010;
+}
+
+.blacklink {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#ptlist {
+    padding: 0px 30px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+}
+
+table, th, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    text-align: center;
+}
+
+.tblok {
+    background-color: #cef606b0;
+}
+
+.tableeven {
+    background-color: #ffff0050;
+}
+
+.tableodd {
+    background-color: #77070780;
+}
+
+.tabletop {
+    background-color: rgb(160, 98, 98);
+}
+
+.progressbardone {
+    background-color: yellow;
+    height: 32px;
+    width: 50%;
+    border-radius: 32px;
+    text-decoration: none;
+}
+
+.progressbartodo {
+    background-color: brown;
+    height: 32px;
+    line-height: 32px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 32px;
+    margin-top: 32px;
+    border: 1px solid black;
+}

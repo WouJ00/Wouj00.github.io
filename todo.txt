@@ -1,0 +1,8 @@
+- find and add those bum ahh links
+- get rid of this file when everything is done
+- add comments
+- zet de informatie allemaal op de juiste plek
+- zorg ervoor (eventueel) dat alle classes en ids in dezelfde taal zijn
+
+el feedback:
+- maak namen van variabelen langer (gwn volledig)
