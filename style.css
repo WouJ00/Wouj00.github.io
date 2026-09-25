@@ -22,54 +22,54 @@ main {
     background-color: #11111110;
 }
 
-@keyframes bpanimation {
+@keyframes bodyaboutanimation {
   0%   {background-color: #f0ff83;}
   50% {background-color: #e9fd51;}
   100%   {background-color: #f0ff83;}
 }
 
-@keyframes bfaqanimation {
+@keyframes bodywhyitanimation {
   0%   {background-color: #ffeaff;}
   50% {background-color: #ffcaff;}
   100%   {background-color: #ffeaff;}
 }
 
-@keyframes bdanimation {
+@keyframes bodydashboardanimation {
   0%   {background-color: #ffeadf;}
   50% {background-color: #ffd0b7;}
   100%   {background-color: #ffeadf;}
 }
 
-@keyframes bhanimation {
+@keyframes bodyhomeanimation {
   0%   {background-color: #c2ffd4;}
   50% {background-color: #9fffbc;}
   100%   {background-color: #c2ffd4;}
 }
 
-@keyframes bbloganimation {
+@keyframes bodybloganimation {
   0%   {background-color: #cec2ff;}
   50% {background-color: #ea9fff;}
   100%   {background-color: #cec2ff;}
 }
 
-.bp {
-    animation: bpanimation 100s infinite;
+.bodyabout {
+    animation: bodyaboutanimation 100s infinite;
 }
 
-.bfaq {
-    animation: bfaqanimation 100s infinite;
+.bodywhyit {
+    animation: bodywhyitanimation 100s infinite;
 }
 
-.bd {
-    animation: bdanimation 100s infinite;
+.bodydashboard {
+    animation: bodydashboardanimation 100s infinite;
 }
 
-.bh {
-    animation: bhanimation 100s infinite;
+.bodyhome {
+    animation: bodyhomeanimation 100s infinite;
 }
 
-.bblog {
-    animation: bbloganimation 100s infinite;
+.bodyblog {
+    animation: bodybloganimation 100s infinite;
 }
 
 .menu {
@@ -162,6 +162,7 @@ main {
     border-radius: 10px;
 }
 
+/*Alles wat met de tables te maken heeft zit hieronder*/
 table, th, tr, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -191,6 +192,7 @@ th {
 .tabletop {
     background-color: rgb(160, 98, 98);
 }
+/*Alles wat met de tables te maken heeft zit hierboven*/
 
 .progressbardone {
     background-color: yellow;
