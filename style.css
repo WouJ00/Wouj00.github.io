@@ -197,7 +197,7 @@ th {
 .progressbardone {
     background-color: yellow;
     height: 32px;
-    width: 50%;
+    width: 10%; /*Pas dit aan om de progression in de bar aan te passen*/
     border-radius: 32px;
     text-decoration: none;
 }

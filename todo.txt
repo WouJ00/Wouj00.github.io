@@ -2,7 +2,7 @@
 - get rid of this file when everything is done
 - add comments
 - zet de informatie allemaal op de juiste plek
-- zorg ervoor (eventueel) dat alle classes en ids in dezelfde taal zijn
+- voeg wat leuke shit toe zodat de website niet eentonig af is
 
 el feedback:
 - maak namen van variabelen langer (gwn volledig)
