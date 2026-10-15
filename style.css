@@ -1,0 +1,233 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.defaulttext {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#darker {
+    background-color: #00000010;
+}
+
+#selected {
+    background-color: #11111110;
+}
+
+.blogUIContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-height: 10vh;
+}
+
+.blogUIBox {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  border-radius: 15px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+@keyframes bodyaboutanimation {
+  0%   {background-color: #f0ff83;}
+  50% {background-color: #e9fd51;}
+  100%   {background-color: #f0ff83;}
+}
+
+@keyframes bodywhyitanimation {
+  0%   {background-color: #ffeaff;}
+  50% {background-color: #ffcaff;}
+  100%   {background-color: #ffeaff;}
+}
+
+@keyframes bodydashboardanimation {
+  0%   {background-color: #ffeadf;}
+  50% {background-color: #ffd0b7;}
+  100%   {background-color: #ffeadf;}
+}
+
+@keyframes bodyhomeanimation {
+  0%   {background-color: #c2ffd4;}
+  50% {background-color: #9fffbc;}
+  100%   {background-color: #c2ffd4;}
+}
+
+@keyframes bodybloganimation {
+  0%   {background-color: #cec2ff;}
+  50% {background-color: #ea9fff;}
+  100%   {background-color: #cec2ff;}
+}
+
+.bodyabout {
+    animation: bodyaboutanimation 100s infinite;
+}
+
+.bodywhyit {
+    animation: bodywhyitanimation 100s infinite;
+}
+
+.bodydashboard {
+    animation: bodydashboardanimation 100s infinite;
+}
+
+.bodyhome {
+    animation: bodyhomeanimation 100s infinite;
+}
+
+.bodyblog {
+    animation: bodybloganimation 100s infinite;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #11111150;
+    margin-top: auto; 
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.menu ul li {
+    flex: 1;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: #00000010;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #11111150;
+    margin-top: auto; 
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.aside ul li {
+    flex: 1;
+}
+
+.aside ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.aside ul li a:hover {
+    background-color: #00000010;
+}
+
+.blacklink {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#ptlist {
+    padding: 0px 30px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+}
+
+/*Alles wat met de tables te maken heeft zit hieronder*/
+table, th, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    text-align: center;
+}
+
+.tblok {
+    background-color: #cef606b0;
+}
+
+.tableeven {
+    background-color: #ffff0050;
+}
+
+.tableodd {
+    background-color: #77070780;
+}
+
+.tabletop {
+    background-color: rgb(160, 98, 98);
+}
+/*Alles wat met de tables te maken heeft zit hierboven*/
+
+.progressbardone {
+    background-color: yellow;
+    height: 32px;
+    width: 10%; /*Pas dit aan om de progression in de bar aan te passen*/
+    border-radius: 32px;
+    text-decoration: none;
+}
+
+.progressbartodo {
+    background-color: brown;
+    height: 32px;
+    line-height: 32px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 32px;
+    margin-top: 32px;
+    border: 1px solid black;
+}
