@@ -12,6 +12,7 @@ main {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 20px;
+    font-family:  'Trebuchet MS', sans-serif;
 }
 
 #darker {
@@ -75,6 +76,28 @@ main {
 
 .bodywhyit {
     animation: bodywhyitanimation 100s infinite;
+}
+
+.whyit-content {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.whyit-image {
+    width: 35%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.whyit-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .bodydashboard {

@@ -1,9 +1,8 @@
-- find and add those bum ahh links
 - get rid of this file when everything is done
 - add comments
-- zet de informatie allemaal op de juiste plek
 - voeg wat leuke shit toe zodat de website niet eentonig af is
 - fix the text on the blog page 
+- fix the dashboard table (it's wrong :c)
 
 el feedback:
 - maak namen van variabelen langer (gwn volledig)
