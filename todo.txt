@@ -2,7 +2,7 @@
 - add comments
 - voeg wat leuke shit toe zodat de website niet eentonig af is
 - fix the text on the blog page 
-- fix the dashboard table (it's wrong :c)
+- fix the dashboard table (it's wrong :c) (check your dms with bee6 for what it is supposed to look like)
 
 el feedback:
 - maak namen van variabelen langer (gwn volledig)

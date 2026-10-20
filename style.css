@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family:  'Trebuchet MS', sans-serif;
 }
 
 main {
@@ -12,7 +13,6 @@ main {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 20px;
-    font-family:  'Trebuchet MS', sans-serif;
 }
 
 #darker {
@@ -23,21 +23,76 @@ main {
     background-color: #11111110;
 }
 
+.blog-intro {
+    margin: 40px 0 30px;
+    text-align: center;
+}
+
+.blog-intro h1 {
+    font-size: 2.5rem;
+    margin: 8px 0;
+}
+
+.blog-intro > p:last-child {
+    line-height: 1.6;
+}
+
 .blogUIContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  min-height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin: 30px 0;
 }
 
 .blogUIBox {
-  width: 200px;
-  height: 100px;
-  background-color: lightblue;
-  border-radius: 15px;
-  border: 2px solid black;
-  border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.blogUIBox.goals {
+    background-color: #E4D9F3;
+    color: #443451;
+}
+
+.blogUIBox.direction {
+    background-color: #D9E8DF;
+    color: #304B3A;
+}
+
+.blogUIBox.experience {
+    background-color: #d8fc96;
+    color: #304B3A;
+}
+
+.blogUIBox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #00000015;
+}
+
+.blogUIBox:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 4px;
+}
+
+.blogUIBox h2 {
+    margin: 0 0 8px;
+}
+
+.blogUIBox p {
+    line-height: 1.6;
+}
+
+.blog-link {
+    margin-top: auto;
+    padding-top: 12px;
+    font-weight: bold;
 }
 
 @keyframes bodyaboutanimation {
