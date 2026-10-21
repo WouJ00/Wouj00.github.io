@@ -1,8 +1,8 @@
 - get rid of this file when everything is done
 - add comments
 - voeg wat leuke shit toe zodat de website niet eentonig af is
-- fix the text on the blog page 
 - fix the dashboard table (it's wrong :c) (check your dms with bee6 for what it is supposed to look like)
+- title aan elke page toevoegen
 
 el feedback:
 - maak namen van variabelen langer (gwn volledig)
