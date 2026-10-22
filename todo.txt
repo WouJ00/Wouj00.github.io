@@ -1,3 +1,4 @@
 - get rid of this file when everything is done
 - voeg wat leuke shit toe zodat de website niet eentonig af is
-- title aan elke page toevoegen
+- make the home page feel more welcoming
+- finish the directions page and the experience page
