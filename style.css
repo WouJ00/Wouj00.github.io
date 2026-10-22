@@ -179,12 +179,17 @@ th {
 }
 
 .blogUIBox.direction {
-    background-color: #efff8a50;
+    background-color: #ffff8a50;
     color: #304B3A;
 }
 
 .blogUIBox.experience {
     background-color: #ffff8a50;
+    color: #304B3A;
+}
+
+.blogUIBox.history {
+    background-color: #dfff8a50;
     color: #304B3A;
 }
 
