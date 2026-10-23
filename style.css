@@ -278,6 +278,36 @@ th {
     margin: 5px 0;
 }
 
+.experience-content {
+    display: grid;
+    grid-template-columns: 35% minmax(0, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+.experience-image-wrapper {
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.experience-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.experience-text {
+    min-width: 0;
+    align-self: stretch;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
