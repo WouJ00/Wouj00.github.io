@@ -15,6 +15,12 @@ main {
     padding: 20px;
 }
 
+.blacklink {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
 #center {
     text-align: center;
 }
@@ -46,33 +52,148 @@ th {
 }
 
 @keyframes bodyaboutanimation {
-  0%   {background-color: #f0ff83;}
+  0% {background-color: #f0ff83;}
   50% {background-color: #e9fd51;}
-  100%   {background-color: #f0ff83;}
+  100% {background-color: #f0ff83;}
 }
 
 @keyframes bodywhyitanimation {
-  0%   {background-color: #ffeaff;}
+  0% {background-color: #ffeaff;}
   50% {background-color: #ffcaff;}
-  100%   {background-color: #ffeaff;}
+  100% {background-color: #ffeaff;}
 }
 
 @keyframes bodydashboardanimation {
-  0%   {background-color: #ffeadf;}
+  0% {background-color: #ffeadf;}
   50% {background-color: #ffd0b7;}
-  100%   {background-color: #ffeadf;}
+  100% {background-color: #ffeadf;}
 }
 
 @keyframes bodyhomeanimation {
-  0%   {background-color: #c2ffd4;}
+  0% {background-color: #c2ffd4;}
   50% {background-color: #9fffbc;}
-  100%   {background-color: #c2ffd4;}
+  100% {background-color: #c2ffd4;}
 }
 
 @keyframes bodybloganimation {
-  0%   {background-color: #cec2ff;}
+  0% {background-color: #cec2ff;}
   50% {background-color: #ea9fff;}
-  100%   {background-color: #cec2ff;}
+  100% {background-color: #cec2ff;}
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #11111150;
+    margin-top: auto; 
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.menu ul li {
+    flex: 1;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: #00000010;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #11111150;
+    margin-top: auto; 
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.aside ul li {
+    flex: 1;
+}
+
+.aside ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.aside ul li a:hover {
+    background-color: #00000010;
+}
+
+/* Home page */
+.bodyhome {
+    animation: bodyhomeanimation 100s infinite;
+}
+
+.imageGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.imageItem {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imageItem img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.05);
+}
+
+.imageText {
+    padding: 15px;
+    background: #f5f5f5;
+}
+
+.imageText h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.imageText p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
 }
 
 /* About page */
@@ -80,18 +201,28 @@ th {
     animation: bodyaboutanimation 100s infinite;
 }
 
+#ptlist {
+    padding: 0px 30px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+}
+
 /* Why-IT page */
 .bodywhyit {
     animation: bodywhyitanimation 100s infinite;
 }
 
-.whyit-content {
+.whyitContent {
     display: flex;
     align-items: stretch;
     gap: 20px;
 }
 
-.whyit-image {
+.whyitImage {
     width: 35%;
     height: auto;
     object-fit: contain;
@@ -100,7 +231,7 @@ th {
     border-radius: 10px;
 }
 
-.whyit-text {
+.whyitText {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -112,7 +243,6 @@ th {
     animation: bodydashboardanimation 100s infinite;
 }
 
-/* Alles wat met de dashboard table te maken heeft zit hieronder */
 .tblok {
     background-color: #cef606b0;
 }
@@ -128,11 +258,26 @@ th {
 .tabletop {
     background-color: rgb(160, 98, 98);
 }
-/* Alles wat met dashboard table te maken heeft zit hierboven */
 
-/* Home page */
-.bodyhome {
-    animation: bodyhomeanimation 100s infinite;
+.progressbardone {
+    background-color: yellow;
+    height: 32px;
+    width: 10%; /*Pas dit aan om de progression in de bar aan te passen*/
+    border-radius: 32px;
+    text-decoration: none;
+}
+
+.progressbartodo {
+    background-color: brown;
+    height: 32px;
+    line-height: 32px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 32px;
+    margin-top: 32px;
+    border: 1px solid black;
 }
 
 /* Blog page */
@@ -278,14 +423,14 @@ th {
     margin: 5px 0;
 }
 
-.experience-content {
+.experienceContent {
     display: grid;
     grid-template-columns: 35% minmax(0, 1fr);
     gap: 20px;
     align-items: stretch;
 }
 
-.experience-image-wrapper {
+.experienceImageWrapper {
     position: relative;
     min-width: 0;
     min-height: 0;
@@ -294,7 +439,7 @@ th {
     border-radius: 10px;
 }
 
-.experience-image {
+.experienceImage {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -303,118 +448,7 @@ th {
     object-position: center;
 }
 
-.experience-text {
+.experienceText {
     min-width: 0;
     align-self: stretch;
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #11111150;
-    margin-top: auto; 
-    display: flex;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
-.menu ul li {
-    flex: 1;
-}
-
-.menu ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.menu ul li a:hover {
-    background-color: #00000010;
-}
-
-.aside {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.aside ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #11111150;
-    margin-top: auto; 
-    display: flex;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
-.aside ul li {
-    flex: 1;
-}
-
-.aside ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.aside ul li a:hover {
-    background-color: #00000010;
-}
-
-.blacklink {
-    color: black;
-    text-align: center;
-    text-decoration: underline;
-}
-
-#ptlist {
-    padding: 0px 30px;
-}
-
-.icon {
-    width: 32px;
-    height: 32px;
-    border-radius: 10px;
-}
-
-.progressbardone {
-    background-color: yellow;
-    height: 32px;
-    width: 10%; /*Pas dit aan om de progression in de bar aan te passen*/
-    border-radius: 32px;
-    text-decoration: none;
-}
-
-.progressbartodo {
-    background-color: brown;
-    height: 32px;
-    line-height: 32px;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-radius: 32px;
-    margin-top: 32px;
-    border: 1px solid black;
 }
